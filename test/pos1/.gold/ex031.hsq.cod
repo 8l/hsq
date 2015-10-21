@@ -1,0 +1,82 @@
+	top:top top sqmain
+
+_main:
+	dec sp; ?+11; sp ?+7; ?+6; sp ?+2; 0
+	?+6; sp ?+2; bp 0
+	bp; sp bp
+	dec sp; ?+11; sp ?+7; ?+6; sp ?+2; 0
+	?+6; sp ?+2; t1 0
+
+l1:
+	t1; dec Z; Z t1 ?+3; Z Z ?+9; Z; dec t1; dec t1
+	Z t1 l3
+	Z Z l3
+
+
+l2:
+	Z Z l1
+l3:
+
+l4:
+	t1; dec Z; Z t1 ?+3; Z Z ?+9; Z; dec t1; dec t1
+	Z t1 l6
+	Z Z l6
+
+l5:
+	Z Z l4
+l6:
+
+l7:
+	t1; dec Z; Z t1 ?+3; Z Z ?+9; Z; dec t1; dec t1
+	Z t1 l9
+	Z Z l9
+
+l8:
+	Z Z l7
+l9:
+
+l10:
+	t1; c2 Z; Z t1 ?+3; Z Z ?+9; Z; c2 t1; c2 t1
+	Z t1 l12
+	Z Z l12
+
+l11:
+	Z Z l10
+l12:
+
+l13:
+	t1; dec Z; Z t1 ?+3; Z Z ?+9; Z; dec t1; dec t1
+	Z t1 l15
+	Z Z l15
+
+l14:
+	Z Z l13
+l15:
+
+l16:
+	t1; c2 Z; Z t1 ?+3; Z Z ?+9; Z; c2 t1; c2 t1
+	Z t1 l18
+	Z Z l18
+
+l17:
+	Z Z l16
+l18:
+
+	c3 (-1)
+
+	?+8; sp ?+4; t1; 0 t1; inc sp
+	sp; bp sp
+	?+8; sp ?+4; bp; 0 bp; inc sp
+	?+8; sp ?+4; ?+7; 0 ?+3; Z Z 0
+
+sqmain:
+	dec sp; ?+11; sp ?+7; ?+6; sp ?+2; 0
+	?+6; sp ?+2; ?+2 0 _main; . ?; inc sp
+
+	Z Z (-1)
+
+. c1:0 c2:2 c3:97
+
+. t1:0
+
+. inc:-1 Z:0 dec:1 ax:0 bp:0 sp:-sp

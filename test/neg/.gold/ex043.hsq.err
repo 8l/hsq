@@ -1,0 +1,3 @@
+Warning {hsq@2867}(ex043.hsq:11) unresolved 'k'
+Warning {hsq@2867}(ex043.hsq:4) unresolved 'k'
+Error: Sqasm: unresolved symbols:  {_k:225}

@@ -1,0 +1,11 @@
+	top:top top sqmain
+
+.  _a:50 _b:'abc'
+
+sqmain:
+	dec sp; ?+11; sp ?+7; ?+6; sp ?+2; 0
+	?+6; sp ?+2; ?+2 0 _main; . ?; inc sp
+
+	Z Z (-1)
+
+. inc:-1 Z:0 dec:1 ax:0 bp:0 sp:-sp
